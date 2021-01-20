@@ -5,7 +5,13 @@
     <script>
 
         function hello() {
-            alert('Hello, world!')
+            var heading = document.querySelector('h1');
+            if (heading.innerHTML === 'Hello!') {
+                heading.innerHTML.innerHTML = 'Goodbye!';
+            } else {
+                heading.innerHTML.innerHTML = 'Hello!';
+            }
+
         }
     </script>
   </head>
